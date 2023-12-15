@@ -32,7 +32,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Put on your detective hat: What's wrong in this video?</h1>
+          <h1 class="title is-1 publication-title">CaptainCook: A dataset for understanding errors in procedural activities</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.linkedin.com/in/rohithpeddi/">Rohith Peddi</a><sup>1</sup>,
@@ -50,10 +50,13 @@
               <a href="https://www.linkedin.com/in/vyas-akshay">Akshay Vyas</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/vasundhara-komaragiri">Vasundhara Komaragiri</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Jikai Wang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Jikai Wang</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Qifan Zhang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/vasundhara-komaragiri">Vasundhara Komaragiri</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://personal.utdallas.edu/~nicholas.ruozzi/">Nicholas Ruozzi</a><sup>1</sup>
@@ -84,7 +87,7 @@
             <div class="publication-links">
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/Error-Dataset"
+                <a href="https://github.com/CaptainCook4D/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -94,7 +97,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://error-dataset.github.io/ErrorDataset/overview.html"
+                <a href="https://captaincook4d.github.io/captain-cook/overview.html"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-photo-video"></i>
@@ -103,15 +106,15 @@
                   </a>
               </span>
               <!-- Poster Link. -->
-              <span class="link-block">
-                <a href="https://utdallas.box.com/s/f8ndiewb5s2dyd3o9sfly57i46j51qym"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Poster</span>
-                </a>
-              </span>
+<!--              <span class="link-block">-->
+<!--                <a href="https://utdallas.box.com/s/f8ndiewb5s2dyd3o9sfly57i46j51qym"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>Poster</span>-->
+<!--                </a>-->
+<!--              </span>-->
             </div>
 
             <div class="publication-links">
@@ -166,17 +169,15 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Following step-by-step procedures is an essential component of various activities carried out by
-              individuals in their everyday lives. These procedures serve as a guiding framework that helps achieve goals
-              efficiently, whether assembling furniture or preparing a recipe. However, the complexity and duration of
-              procedural activities inherently increase the likelihood of making errors. Understanding such procedural
-              activities from a sequence of frames is a challenging task that demands an accurate interpretation of
-              visual information and an ability to reason about the structure of the activity. To this end,
-              we collected a new ego-centric 4D dataset comprising 380 recordings (90 hrs) of people performing recipes
-              in kitchen environments. This dataset consists of two distinct activity types: one in which participants
-              adhere to the provided recipe instructions and another where they deviate and induce errors.
-              We provide 5K step annotations and 10K fine-grained action annotations for 20% of the collected data
-              and benchmark it on two tasks: error detection and procedure learning.
+              Following step-by-step procedures is an essential component of various activities carried out by individuals in their everyday lives.
+              These procedures serve as a guiding framework that helps achieve goals efficiently, whether assembling furniture or preparing a recipe.
+              However, the complexity and duration of procedural activities inherently increase the likelihood of making errors.
+              Understanding such procedural activities from a sequence of frames is a challenging task that demands an accurate
+              interpretation of visual information and an ability to reason about the structure of the activity.
+              To this end, we collected a new egocentric 4D dataset Captain Cook comprising 384 recordings (94.5 hrs) of people performing recipes in real kitchen environments.
+              This dataset consists of two distinct activity types: one in which participants adhere to the provided recipe instructions and another where they deviate and induce errors.
+              We provide 5.3K step annotations and 10K fine-grained action annotations and benchmark it on the following tasks:
+              supervised error recognition, multi-step localization and procedure learning.
             </p>
           </div>
         </div>
@@ -882,34 +883,34 @@
 <!--</section>-->
 
 
-<section id="citation" class="hero is-light is-small is-centered">
-  <div class="container">
-    <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">References</h2>
-    </div>
-    <div class="columns is-vcentered interpolation-panel is-centered">
-      <div class="column interpolation-video-column is-centered">
-        <div class="content">
-          <ol type="1">
-            <li>
-              Madan, Neelu, et al. "Self-Supervised Masked Convolutional Transformer Block for Anomaly Detection."
-              September 2022. URL http://arxiv.org/abs/2209.12148.
-            </li>
-            <li>
-              Ristea, Nicolae-Catalin, et al. "Self-Supervised Predictive Convolutional Attentive Block
-              for Anomaly Detection." March 2022. URL http://arxiv.org/abs/2111.09099.
-            </li>
-            <li>
-              Bansal, Siddhant, Chetan Arora, and C. V. Jawahar. "My View is the Best View: Procedure Learning from Egocentric Videos."
-              European Conference on Computer Vision, July 2022. doi: 10.48550/arxiv.2207.10883.
-            </li>
-          </ol>
-        </div>
-      </div>
-      <br/>
-    </div>
-  </div>
-</section>
+<!--<section id="citation" class="hero is-light is-small is-centered">-->
+<!--  <div class="container">-->
+<!--    <div class="hero-body">-->
+<!--      <h2 class="title is-3 has-text-centered">References</h2>-->
+<!--    </div>-->
+<!--    <div class="columns is-vcentered interpolation-panel is-centered">-->
+<!--      <div class="column interpolation-video-column is-centered">-->
+<!--        <div class="content">-->
+<!--          <ol type="1">-->
+<!--            <li>-->
+<!--              Madan, Neelu, et al. "Self-Supervised Masked Convolutional Transformer Block for Anomaly Detection."-->
+<!--              September 2022. URL http://arxiv.org/abs/2209.12148.-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              Ristea, Nicolae-Catalin, et al. "Self-Supervised Predictive Convolutional Attentive Block-->
+<!--              for Anomaly Detection." March 2022. URL http://arxiv.org/abs/2111.09099.-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              Bansal, Siddhant, Chetan Arora, and C. V. Jawahar. "My View is the Best View: Procedure Learning from Egocentric Videos."-->
+<!--              European Conference on Computer Vision, July 2022. doi: 10.48550/arxiv.2207.10883.-->
+<!--            </li>-->
+<!--          </ol>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <br/>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
 
 
 <!--<section class="section">-->
