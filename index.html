@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QC2TH1XNK4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QC2TH1XNK4');
+  </script>
+  <title>Put on your detective hat: What’s wrong in this video?</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Put on your detective hat: What's wrong in this video?</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/rohithpeddi/">Rohith Peddi</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://shivvrat.github.io/">Shivvrat Arya</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://bharathchalla.github.io/">Bharath Challa</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/likhithapallapothula/">Likhitha Pallapothula</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/vyas-akshay">Akshay Vyas</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/vasundhara-komaragiri">Vasundhara Komaragiri</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Jikai Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://personal.utdallas.edu/~nicholas.ruozzi/">Nicholas Ruozzi</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.cise.ufl.edu/~eragan/">Eric Ragan</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://yuxng.github.io/">Yu Xiang</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://cs.utdallas.edu/people/faculty/gogate-vibhav/">Vibhav Giridhar Gogate</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Texas at Dallas</span>
+            <span class="author-block"><sup>2</sup>The University of Florida</span>
+          </div>
+
+          <div class="is-size-5 publication-title">
+            <span class="venue-block">
+              <a href="https://dmlr.ai/">DMLR Workshop @ICML 2023 (Accepted)</a>
+            </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Error-Dataset"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://error-dataset.github.io/ErrorDataset/overview.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-photo-video"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+              </span>
+              <!-- Poster Link. -->
+              <span class="link-block">
+                <a href="https://utdallas.box.com/s/f8ndiewb5s2dyd3o9sfly57i46j51qym"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span>
+            </div>
+
+            <div class="publication-links">
+              <!-- Task Graphs Link. -->
+              <span class="link-block">
+                <a rel="noopener" target="_parent" href="#task_graphs"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-project-diagram"></i>
+                  </span>
+                  <span>Task Graphs</span>
+                </a>
+              </span>
+              <!-- Data Collection Link. -->
+              <span class="link-block">
+                <a rel="noopener" target="_parent" href="#data_collection"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-server"></i>
+                  </span>
+                  <span>Data Collection</span>
+                </a>
+              </span>
+              <!-- Statistics Link. -->
+              <span class="link-block">
+                <a rel="noopener" target="_parent" href="#data_statistics"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-chart-line"></i>
+                  </span>
+                  <span>Data Statistics</span>
+                </a>
+              </span>
+              <!-- Baselines Link. -->
+              <span class="link-block">
+                <a rel="noopener" target="_parent" href="#baselines"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-cogs"></i>
+                  </span>
+                  <span>Baselines</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Following step-by-step procedures is an essential component of various activities carried out by
+              individuals in their everyday lives. These procedures serve as a guiding framework that helps achieve goals
+              efficiently, whether assembling furniture or preparing a recipe. However, the complexity and duration of
+              procedural activities inherently increase the likelihood of making errors. Understanding such procedural
+              activities from a sequence of frames is a challenging task that demands an accurate interpretation of
+              visual information and an ability to reason about the structure of the activity. To this end,
+              we collected a new ego-centric 4D dataset comprising 380 recordings (90 hrs) of people performing recipes
+              in kitchen environments. This dataset consists of two distinct activity types: one in which participants
+              adhere to the provided recipe instructions and another where they deviate and induce errors.
+              We provide 5K step annotations and 10K fine-grained action annotations for 20% of the collected data
+              and benchmark it on two tasks: error detection and procedure learning.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </div>
+</section>
+
+<!--TODO: Change the description-->
+<section class="hero teaser">
+  <div class="container">
+    <h2 class="title is-3 has-text-centered">Normal & Error Steps</h2>
+    <div class="hero-body">
+      <video id="technique_error_1" autoplay muted loop playsinline height="100%">
+        <source src="static/videos/error_categories/technique_error_1.mp4" type="video/mp4">
+      </video>
+      <h3 class="subtitle has-text-centered">
+        <span class="recipe">Technique Error:</span>
+        <span class="recipe_description">In the recipe <span class="recipe"> <b>butter corn cup</b> </span>
+          the first two video snippets exhibit the outcome of correctly following the instruction
+          <span class="recipe"> <b><u>Mix the contents of the bowl well</u></b> </span> without any spillage,
+          whereas the subsequent three snippets display the result of inducing errors by spilling out corn from the bowl
+          while mixing.
+        </span>
+      </h3>
+    </div>
+
+    <div class="hero-body">
+      <video id="measurement_error" autoplay muted loop playsinline height="100%">
+        <source src="static/videos/error_categories/measurement_error.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="recipe">Measurement Error:</span>
+        <span class="recipe_description">In the recipe <span class="recipe"> <b>scrambled eggs</b> </span>
+          the first two video snippets exhibit the outcome of correctly following the instruction
+          <span class="recipe"> <b><u>Peel 2 garlic cloves</u></b> </span>,
+          whereas the subsequent three snippets display the result when a different number of garlic cloves
+          (4, 1, and 1 respectively) are peeled instead of the intended 2 cloves.
+        </span>
+      </h2>
+    </div>
+
+    <div class="hero-body">
+      <video id="order_error" autoplay muted loop playsinline height="100%">
+        <source src="static/videos/error_categories/order_error.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="recipe">Order Error:</span>
+        <span class="recipe_description">In the recipe <span class="recipe"> <b>spicy tuna avacado wraps</b> </span>
+          the first two video snippets exhibit the outcome of correctly following the instruction
+          <span class="recipe"> <b><u>Top lettuce leaves with tuna mixture</u></b> </span>,
+          whereas the subsequent three snippets display the result when an incorrect order is
+          followed where avacado is added after topping the leaves with the mixture.
+        </span>
+      </h2>
+    </div>
+
+    <div class="hero-body">
+      <video id="preparation_error" autoplay muted loop playsinline height="100%">
+        <source src="static/videos/error_categories/preparation_error.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="recipe">Preparation Error:</span>
+        <span class="recipe_description">In the recipe <span class="recipe"> <b>mug cake</b> </span>
+          the first two video snippets exhibit the outcome of correctly following the instruction
+          <span class="recipe"> <b><u>Whisk batter</u></b> </span>, while the remaining snippets depict incorrect usage
+          of utensils such as a spoon, tablespoon, and hand to perform the same task.
+        </span>
+      </h2>
+    </div>
+
+    <div class="hero-body">
+      <video id="technique_error_2" autoplay muted loop playsinline height="100%">
+        <source src="static/videos/error_categories/technique_error_2.mp4" type="video/mp4">
+      </video>
+      <h3 class="subtitle has-text-centered">
+        <span class="recipe">Technique Error:</span>
+        <span class="recipe_description">In the recipe <span class="recipe"> <b>cucumber raita</b> </span>
+          the first two video snippets exhibit the outcome of correctly following the instruction
+          <span class="recipe"> <b><u>Chop or grate the cucumber</u></b> </span>, while the next three frames
+          on the right show the results when the cucumber is cut improperly, sliced vertically,
+          and sliced horizontally, respectively.
+        </span>
+      </h3>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small is-centered">
+  <div class="hero-body">
+    <h2 class="title is-3 has-text-centered">4D Snippets of Data</h2>
+    <div class="container is-centered">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/4D/4D_SHIVVRAT_HOUSE.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/4D/4D_ROHITH_HOUSE.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/4D/4D_VASUNDHARA_HOUSE.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/4D/4D_AKSHAY_HOUSE.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/4D/4D_BHARATH_HOUSE.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="task_graphs" class="section">
+  <div class="container">
+    <!-- Task Graphs. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Task Graphs</h2>
+        <video autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/task_graph_blender_banana_pancakes.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <!--/Task Graphs-->
+    <h3 class="title is-4 has-text-centered">Task graphs for all selected recipes</h3>
+    <div class="columns is-half is-vcentered interpolation-panel is-centered">
+      <div class="is-half interpolation-video-column is-align-content-center">
+        <div class="column is-centered" id="interpolation-image-wrapper">
+          Loading...
+        </div>
+        <input class="slider is-fullwidth is-large is-info"
+               id="interpolation-slider"
+               step="1" min="0" max="23" value="0" type="range">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="data_collection" class="hero is-light is-small is-centered">
+  <div class="container">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Data Collection & Annotation</h2>
+    </div>
+    <div class="columns is-vcentered interpolation-panel is-centered">
+      <div class="column interpolation-video-column is-centered">
+        <video autoplay muted loop playsinline height="100%">
+          <source src="static/videos/data_collection.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <br/>
+  </div>
+</section>
+
+<section id="data_statistics" class="section">
+  <h2 class="title is-3 has-text-centered">Data Statistics</h2>
+  <div class="hero-body">
+    <div class="container is-centered is-max-desktop">
+      <div class="columns is-centered">
+        <!-- Normal Error Recording Statistics. -->
+        <div class="column is-four-fifths-desktop">
+          <div class="content">
+            <span class="recipe_description">
+              The chart displays the error and normal recording statistics for each recipe.
+              The x-axis lists all selected recipes, while the y-axis corresponds to the number of recordings and
+              total duration of each type of recording.
+            </span>
+            <img src="./static/images/NormalErrorRecordingStatistics.png" alt="NormalErrorRecordingStatistics">
+          </div>
+        </div>
+        <!--/ Normal Error Recording Statistics. -->
+        <!-- Error Recipe Count. -->
+        <div class="column is-four-fifths-desktop">
+          <div class="columns is-centered">
+            <div class="column content">
+              <span class="recipe_description">
+                Distribution of error types and counts of different types of errors performed for each recipe
+              </span>
+              <img src="./static/images/ErrorRecipeCount.jpeg" alt="ErrorRecipeCount">
+            </div>
+          </div>
+        </div>
+        <!--/ Error Recipe Count. -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-centered is-max-desktop">
+    <div class="hero-body">
+      <!-- Error Synopsis. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h3 class="subtitle has-text-centered">
+            <span class="recipe_description">
+              A structured
+            </span>
+            <span class="recipe">
+              synopsis
+            </span>
+            <span class="recipe_description">
+              of different types of errors and their short descriptions compiled from
+              the annotations.
+            </span>
+          </h3>
+          <img src="./static/images/ErrorSynopsis.png" alt="ErrorSynopsis">
+        </div>
+      </div>
+      <!--/ Error Synopsis. -->
+    </div>
+  </div>
+</section>
+
+
+<!--<section id="baselines" class="hero is-small is-centered">-->
+<!--  <div class="container">-->
+<!--    <div class="hero-body">-->
+<!--      <h2 class="title is-3 has-text-centered">Baselines</h2>-->
+<!--    </div>-->
+<!--    <div class="hero-body">-->
+<!--      <div class="container has-text-centered">-->
+<!--        &lt;!&ndash; Anamoly Detection. &ndash;&gt;-->
+<!--        <div class="columns is-centered">-->
+<!--          <div class="column is-half">-->
+<!--            <h3 class="title is-4">Anamoly Detection</h3>-->
+<!--            <div class="table-container is-centered">-->
+<!--              <table class="table is-striped is-fullwidth is-hoverable">-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                  <th>Method</th>-->
+<!--                  <th>AUC</th>-->
+<!--                  <th>EER </th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                  <th>SSMCTB</th>-->
+<!--                  <td>50.65%</td>-->
+<!--                  <td>49.65% </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>SSPCAB</th>-->
+<!--                  <td>50.25%</td>-->
+<!--                  <td>49.74%</td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="columns is-centered">-->
+<!--          <div class="column is-fullwidth">-->
+<!--            <div class="content has-text-centered">-->
+<!--              <p>-->
+<!--                Self-supervised <span class="dnerf">anomaly detection methods</span> from literature, self-supervised-->
+<!--                masked convolutional transformer block (SSMCTB) [1] and self-supervised predictive convolutional-->
+<!--                attentive block (SSPCAB) [2], and trained them on top of ResNet-50, where the latter serves as a neural,-->
+<!--                image-based feature extractor. Both models were trained using reconstruction loss. We evaluated the-->
+<!--                benchmark models using frame-level area under the curve (AUC) and Equal Error Rate (EER) scores.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash;/ Anamoly Detection. &ndash;&gt;-->
+<!--        &lt;!&ndash; Procedure Learning. &ndash;&gt;-->
+<!--        <div class="columns is-centered">-->
+<!--          <div class="column is-fullwidth">-->
+<!--            <h3 class="title is-4">Procedure Learning</h3>-->
+<!--            <div class="table-container is-centered">-->
+<!--              <table class="table is-striped is-fullwidth is-hoverable">-->
+<!--                <thead>-->
+<!--                <tr>-->
+<!--                  <th>-</th>-->
+<!--                  <th colspan="3">CRL</th>-->
+<!--                  <th colspan="3">CRL + CIDM(0.1)</th>-->
+<!--                  <th colspan="3">CRL + CIDM(0.3)</th>-->
+<!--                  <th colspan="3">CRL + CIDM(0.5)</th>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>Recipe Name</th>-->
+<!--                  <th>Precision</th>-->
+<!--                  <th>Recall</th>-->
+<!--                  <th>IOU</th>-->
+<!--                  <th>Precision</th>-->
+<!--                  <th>Recall</th>-->
+<!--                  <th>IOU</th>-->
+<!--                  <th>Precision</th>-->
+<!--                  <th>Recall</th>-->
+<!--                  <th>IOU</th>-->
+<!--                  <th>Precision</th>-->
+<!--                  <th>Recall</th>-->
+<!--                  <th>IOU </th>-->
+<!--                </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                <tr>-->
+<!--                  <th>BlenderBananaPancakes</th>-->
+<!--                  <td>12.65</td>-->
+<!--                  <td>9.50</td>-->
+<!--                  <td>5.16</td>-->
+<!--                  <td>15.54</td>-->
+<!--                  <td>9.96</td>-->
+<!--                  <td>5.72</td>-->
+<!--                  <td>18.51</td>-->
+<!--                  <td>10.51</td>-->
+<!--                  <td>6.38</td>-->
+<!--                  <td>15.13</td>-->
+<!--                  <td>10.37</td>-->
+<!--                  <td>5.75 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>BreakfastBurritos</th>-->
+<!--                  <td>18.72</td>-->
+<!--                  <td>11.46</td>-->
+<!--                  <td>6.77</td>-->
+<!--                  <td>16.58</td>-->
+<!--                  <td>10.77</td>-->
+<!--                  <td>5.87</td>-->
+<!--                  <td>16.23</td>-->
+<!--                  <td>11.21</td>-->
+<!--                  <td>6.57</td>-->
+<!--                  <td>20.46</td>-->
+<!--                  <td>13.16</td>-->
+<!--                  <td>7.60 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>BroccoliStirFry</th>-->
+<!--                  <td>9.92</td>-->
+<!--                  <td>9.11</td>-->
+<!--                  <td>3.93</td>-->
+<!--                  <td>8.20</td>-->
+<!--                  <td>8.10</td>-->
+<!--                  <td>3.85</td>-->
+<!--                  <td>6.98</td>-->
+<!--                  <td>7.06</td>-->
+<!--                  <td>3.34</td>-->
+<!--                  <td>10.03</td>-->
+<!--                  <td>8.29</td>-->
+<!--                  <td>3.93 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>ButterCornCup</th>-->
+<!--                  <td>13.82</td>-->
+<!--                  <td>11.85</td>-->
+<!--                  <td>5.79</td>-->
+<!--                  <td>15.07</td>-->
+<!--                  <td>12.30</td>-->
+<!--                  <td>5.82</td>-->
+<!--                  <td>16.13</td>-->
+<!--                  <td>12.52</td>-->
+<!--                  <td>5.99</td>-->
+<!--                  <td>14.47</td>-->
+<!--                  <td>11.11</td>-->
+<!--                  <td>5.36 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>CapreseBruschetta</th>-->
+<!--                  <td>25.55</td>-->
+<!--                  <td>12.89</td>-->
+<!--                  <td>7.52</td>-->
+<!--                  <td>20.53</td>-->
+<!--                  <td>9.09</td>-->
+<!--                  <td>5.59</td>-->
+<!--                  <td>17.46</td>-->
+<!--                  <td>10.33</td>-->
+<!--                  <td>5.94</td>-->
+<!--                  <td>13.07</td>-->
+<!--                  <td>9.00</td>-->
+<!--                  <td>4.93 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>CheesePimiento</th>-->
+<!--                  <td>19.74</td>-->
+<!--                  <td>10.48</td>-->
+<!--                  <td>6.44</td>-->
+<!--                  <td>17.49</td>-->
+<!--                  <td>10.32</td>-->
+<!--                  <td>6.26</td>-->
+<!--                  <td>14.69</td>-->
+<!--                  <td>8.88</td>-->
+<!--                  <td>5.42</td>-->
+<!--                  <td>17.41</td>-->
+<!--                  <td>10.43</td>-->
+<!--                  <td>6.01 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>Coffee</th>-->
+<!--                  <td>13.68</td>-->
+<!--                  <td>9.91</td>-->
+<!--                  <td>5.49</td>-->
+<!--                  <td>15.76</td>-->
+<!--                  <td>10.25</td>-->
+<!--                  <td>5.63</td>-->
+<!--                  <td>16.80</td>-->
+<!--                  <td>11.12</td>-->
+<!--                  <td>5.92</td>-->
+<!--                  <td>16.33</td>-->
+<!--                  <td>11.05</td>-->
+<!--                  <td>6.03 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>CucumberRaita</th>-->
+<!--                  <td>13.58</td>-->
+<!--                  <td>7.92</td>-->
+<!--                  <td>5.14</td>-->
+<!--                  <td>16.15</td>-->
+<!--                  <td>9.97</td>-->
+<!--                  <td>6.09</td>-->
+<!--                  <td>10.44</td>-->
+<!--                  <td>7.17</td>-->
+<!--                  <td>4.17</td>-->
+<!--                  <td>15.85</td>-->
+<!--                  <td>8.82</td>-->
+<!--                  <td>5.53 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>DressedUpMeatballs</th>-->
+<!--                  <td>15.20</td>-->
+<!--                  <td>10.80</td>-->
+<!--                  <td>6.05</td>-->
+<!--                  <td>17.59</td>-->
+<!--                  <td>10.27</td>-->
+<!--                  <td>5.81</td>-->
+<!--                  <td>16.77</td>-->
+<!--                  <td>9.71</td>-->
+<!--                  <td>5.64</td>-->
+<!--                  <td>17.42</td>-->
+<!--                  <td>11.62</td>-->
+<!--                  <td>6.80 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>HerbOmeletWithFriedTomatoes</th>-->
+<!--                  <td>14.66</td>-->
+<!--                  <td>14.98</td>-->
+<!--                  <td>5.50</td>-->
+<!--                  <td>14.64</td>-->
+<!--                  <td>11.34</td>-->
+<!--                  <td>6.29</td>-->
+<!--                  <td>14.40</td>-->
+<!--                  <td>10.52</td>-->
+<!--                  <td>5.21</td>-->
+<!--                  <td>16.01</td>-->
+<!--                  <td>15.80</td>-->
+<!--                  <td>6.27 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>MicrowaveEggSandwich</th>-->
+<!--                  <td>16.25</td>-->
+<!--                  <td>10.44</td>-->
+<!--                  <td>6.16</td>-->
+<!--                  <td>19.16</td>-->
+<!--                  <td>11.29</td>-->
+<!--                  <td>6.99</td>-->
+<!--                  <td>15.93</td>-->
+<!--                  <td>11.00</td>-->
+<!--                  <td>6.34</td>-->
+<!--                  <td>21.43</td>-->
+<!--                  <td>12.31</td>-->
+<!--                  <td>7.37 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>MicrowaveFrenchToast</th>-->
+<!--                  <td>16.82</td>-->
+<!--                  <td>7.90</td>-->
+<!--                  <td>5.07</td>-->
+<!--                  <td>17.31</td>-->
+<!--                  <td>8.82</td>-->
+<!--                  <td>5.66</td>-->
+<!--                  <td>15.91</td>-->
+<!--                  <td>8.84</td>-->
+<!--                  <td>5.65</td>-->
+<!--                  <td>14.06</td>-->
+<!--                  <td>8.49</td>-->
+<!--                  <td>5.24 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>MicrowaveMugPizza</th>-->
+<!--                  <td>12.82</td>-->
+<!--                  <td>9.78</td>-->
+<!--                  <td>5.27</td>-->
+<!--                  <td>12.69</td>-->
+<!--                  <td>9.18</td>-->
+<!--                  <td>5.18</td>-->
+<!--                  <td>15.65</td>-->
+<!--                  <td>9.43</td>-->
+<!--                  <td>5.55</td>-->
+<!--                  <td>14.50</td>-->
+<!--                  <td>9.94</td>-->
+<!--                  <td>5.54 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>MugCake</th>-->
+<!--                  <td>16.12</td>-->
+<!--                  <td>12.95</td>-->
+<!--                  <td>6.87</td>-->
+<!--                  <td>10.32</td>-->
+<!--                  <td>8.85</td>-->
+<!--                  <td>4.40</td>-->
+<!--                  <td>10.86</td>-->
+<!--                  <td>9.63</td>-->
+<!--                  <td>4.83</td>-->
+<!--                  <td>13.69</td>-->
+<!--                  <td>10.80</td>-->
+<!--                  <td>5.70 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>PanFriedTofu</th>-->
+<!--                  <td>8.86</td>-->
+<!--                  <td>10.39</td>-->
+<!--                  <td>3.75</td>-->
+<!--                  <td>9.34</td>-->
+<!--                  <td>12.44</td>-->
+<!--                  <td>3.87</td>-->
+<!--                  <td>9.59</td>-->
+<!--                  <td>10.20</td>-->
+<!--                  <td>3.59</td>-->
+<!--                  <td>8.98</td>-->
+<!--                  <td>10.58</td>-->
+<!--                  <td>3.68 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>Pinwheels</th>-->
+<!--                  <td>13.58</td>-->
+<!--                  <td>11.96</td>-->
+<!--                  <td>5.92</td>-->
+<!--                  <td>16.08</td>-->
+<!--                  <td>13.06</td>-->
+<!--                  <td>7.05</td>-->
+<!--                  <td>11.72</td>-->
+<!--                  <td>10.22</td>-->
+<!--                  <td>4.76</td>-->
+<!--                  <td>17.07</td>-->
+<!--                  <td>11.89</td>-->
+<!--                  <td>6.32 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>Ramen</th>-->
+<!--                  <td>11.09</td>-->
+<!--                  <td>9.97</td>-->
+<!--                  <td>4.48</td>-->
+<!--                  <td>12.90</td>-->
+<!--                  <td>10.92</td>-->
+<!--                  <td>5.07</td>-->
+<!--                  <td>12.59</td>-->
+<!--                  <td>10.77</td>-->
+<!--                  <td>4.66</td>-->
+<!--                  <td>12.23</td>-->
+<!--                  <td>9.74</td>-->
+<!--                  <td>4.38 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>SautedMushrooms</th>-->
+<!--                  <td>15.06</td>-->
+<!--                  <td>12.22</td>-->
+<!--                  <td>6.16</td>-->
+<!--                  <td>19.54</td>-->
+<!--                  <td>13.83</td>-->
+<!--                  <td>7.42</td>-->
+<!--                  <td>19.08</td>-->
+<!--                  <td>11.61</td>-->
+<!--                  <td>6.25</td>-->
+<!--                  <td>19.54</td>-->
+<!--                  <td>13.82</td>-->
+<!--                  <td>7.42 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>ScrambledEggs</th>-->
+<!--                  <td>11.11</td>-->
+<!--                  <td>11.08</td>-->
+<!--                  <td>5.27</td>-->
+<!--                  <td>11.70</td>-->
+<!--                  <td>10.96</td>-->
+<!--                  <td>5.27</td>-->
+<!--                  <td>14.91</td>-->
+<!--                  <td>14.17</td>-->
+<!--                  <td>7.07</td>-->
+<!--                  <td>15.61</td>-->
+<!--                  <td>13.82</td>-->
+<!--                  <td>6.43 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>SpicedHotChocolate</th>-->
+<!--                  <td>29.82</td>-->
+<!--                  <td>10.58</td>-->
+<!--                  <td>8.49</td>-->
+<!--                  <td>29.79</td>-->
+<!--                  <td>11.04</td>-->
+<!--                  <td>8.74</td>-->
+<!--                  <td>28.57</td>-->
+<!--                  <td>13.61</td>-->
+<!--                  <td>9.95</td>-->
+<!--                  <td>29.56</td>-->
+<!--                  <td>9.79</td>-->
+<!--                  <td>7.87 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>SpicyTunaAvocadoWraps</th>-->
+<!--                  <td>15.62</td>-->
+<!--                  <td>10.52</td>-->
+<!--                  <td>5.67</td>-->
+<!--                  <td>12.47</td>-->
+<!--                  <td>9.61</td>-->
+<!--                  <td>5.25</td>-->
+<!--                  <td>18.95</td>-->
+<!--                  <td>10.18</td>-->
+<!--                  <td>5.55</td>-->
+<!--                  <td>14.81</td>-->
+<!--                  <td>10.38</td>-->
+<!--                  <td>5.58 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>TomatoChutney</th>-->
+<!--                  <td>12.25</td>-->
+<!--                  <td>10.68</td>-->
+<!--                  <td>5.42</td>-->
+<!--                  <td>12.25</td>-->
+<!--                  <td>10.68</td>-->
+<!--                  <td>5.42</td>-->
+<!--                  <td>14.69</td>-->
+<!--                  <td>11.44</td>-->
+<!--                  <td>5.71</td>-->
+<!--                  <td>13.64</td>-->
+<!--                  <td>10.17</td>-->
+<!--                  <td>5.23 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>TomatoMozzarellaSalad</th>-->
+<!--                  <td>19.77</td>-->
+<!--                  <td>10.21</td>-->
+<!--                  <td>6.01</td>-->
+<!--                  <td>19.20</td>-->
+<!--                  <td>10.48</td>-->
+<!--                  <td>5.96</td>-->
+<!--                  <td>16.01</td>-->
+<!--                  <td>9.22</td>-->
+<!--                  <td>5.26</td>-->
+<!--                  <td>20.80</td>-->
+<!--                  <td>9.01</td>-->
+<!--                  <td>5.43 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>Zoodles</th>-->
+<!--                  <td>18.32</td>-->
+<!--                  <td>12.80</td>-->
+<!--                  <td>6.37</td>-->
+<!--                  <td>18.32</td>-->
+<!--                  <td>12.80</td>-->
+<!--                  <td>6.37</td>-->
+<!--                  <td>19.60</td>-->
+<!--                  <td>15.70</td>-->
+<!--                  <td>7.34</td>-->
+<!--                  <td>15.54</td>-->
+<!--                  <td>13.48</td>-->
+<!--                  <td>5.41 </td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                  <th>Average</th>-->
+<!--                  <td>15.62</td>-->
+<!--                  <td>10.85</td>-->
+<!--                  <td>5.78</td>-->
+<!--                  <td>15.78</td>-->
+<!--                  <td>10.68</td>-->
+<!--                  <td>5.82</td>-->
+<!--                  <td>15.52</td>-->
+<!--                  <td>10.63</td>-->
+<!--                  <td>5.71</td>-->
+<!--                  <td>16.15</td>-->
+<!--                  <td>10.99</td>-->
+<!--                  <td>5.83</td>-->
+<!--                </tr>-->
+<!--                </tbody>-->
+<!--              </table>-->
+<!--            </div>-->
+<!--            <div class="content has-text-centered">-->
+<!--              <p>-->
+<!--                We train models on our dataset using combinations of two loss functions, CRL and CIDM. CIDM stands for-->
+<!--                Contrastive-Inverse Difference Moment loss, while CRL refers to Cycleback Regression loss.-->
+<!--                We use the training method outlined in the paper and train models with different percentages-->
+<!--                of the CIDM loss component. [3].-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;/ Procedure Learning. &ndash;&gt;-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <br/>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+<section id="citation" class="hero is-light is-small is-centered">
+  <div class="container">
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">References</h2>
+    </div>
+    <div class="columns is-vcentered interpolation-panel is-centered">
+      <div class="column interpolation-video-column is-centered">
+        <div class="content">
+          <ol type="1">
+            <li>
+              Madan, Neelu, et al. "Self-Supervised Masked Convolutional Transformer Block for Anomaly Detection."
+              September 2022. URL http://arxiv.org/abs/2209.12148.
+            </li>
+            <li>
+              Ristea, Nicolae-Catalin, et al. "Self-Supervised Predictive Convolutional Attentive Block
+              for Anomaly Detection." March 2022. URL http://arxiv.org/abs/2111.09099.
+            </li>
+            <li>
+              Bansal, Siddhant, Chetan Arora, and C. V. Jawahar. "My View is the Best View: Procedure Learning from Egocentric Videos."
+              European Conference on Computer Vision, July 2022. doi: 10.48550/arxiv.2207.10883.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <br/>
+    </div>
+  </div>
+</section>
+
+
+<!--<section class="section">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="columns is-centered">-->
+<!--      &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--      <div class="column">-->
+<!--        <div class="content">-->
+<!--          <h2 class="title is-3">Visual Effects</h2>-->
+<!--          <p>-->
+<!--            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect-->
+<!--            would be impossible without nerfies since it would require going through a wall.-->
+<!--          </p>-->
+<!--          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">-->
+<!--            <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+<!--      &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--      <div class="column">-->
+<!--        <h2 class="title is-3">Matting</h2>-->
+<!--        <div class="columns is-centered">-->
+<!--          <div class="column content">-->
+<!--            <p>-->
+<!--              As a byproduct of our method, we can also solve the matting problem by ignoring-->
+<!--              samples that fall outside of a bounding box during rendering.-->
+<!--            </p>-->
+<!--            <video id="matting-video" controls playsinline height="100%">-->
+<!--              <source src="./static/videos/matting.mp4"-->
+<!--                      type="video/mp4">-->
+<!--            </video>-->
+<!--          </div>-->
+
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Matting. &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Animation. &ndash;&gt;-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-full-width">-->
+<!--        <h2 class="title is-3">Animation</h2>-->
+<!--        &lt;!&ndash; Re-rendering. &ndash;&gt;-->
+<!--        <h3 class="title is-4">Re-rendering the input video</h3>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel-->
+<!--            viewpoint such as a stabilized camera by playing back the training deformations.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="content has-text-centered">-->
+<!--          <video id="replay-video"-->
+<!--                 controls-->
+<!--                 muted-->
+<!--                 preload-->
+<!--                 playsinline-->
+<!--                 width="75%">-->
+<!--            <source src="./static/videos/replay.mp4"-->
+<!--                    type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;/ Re-rendering. &ndash;&gt;-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Animation. &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Concurrent Work. &ndash;&gt;-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-full-width">-->
+<!--        <h2 class="title is-3">Related Links</h2>-->
+
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            There's a lot of excellent work that was introduced around the same time as ours.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>-->
+<!--            both use deformation fields to model non-rigid scenes.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Concurrent Work. &ndash;&gt;-->
+
+<!--  </div>-->
+<!--</section>-->
+
+
+<!--<footer class="footer">-->
+<!--  <div class="container">-->
+<!--    <div class="content has-text-centered">-->
+<!--      <a class="icon-link"-->
+<!--         href="./static/videos/nerfies_paper.pdf">-->
+<!--        <i class="fas fa-file-pdf"></i>-->
+<!--      </a>-->
+<!--      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>-->
+<!--        <i class="fab fa-github"></i>-->
+<!--      </a>-->
+<!--    </div>-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-8">-->
+<!--        <div class="content">-->
+<!--          <p>-->
+<!--            This website is licensed under a <a rel="license"-->
+<!--                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative-->
+<!--            Commons Attribution-ShareAlike 4.0 International License</a>.-->
+<!--          </p>-->
+<!--          <p>-->
+<!--            This means you are free to borrow the <a-->
+<!--                  href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,-->
+<!--            we just ask that you link back to this page in the footer.-->
+<!--            Please remember to remove the analytics code included in the header of the website which-->
+<!--            you do not want on your website.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
+
+</body>
+</html>
