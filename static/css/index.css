@@ -166,12 +166,12 @@ body {
 }
 
 #interpolation-image-wrapper {
-  width: 100%;
+    width: 68em;
     justify-content:center
 }
 #interpolation-image-wrapper img {
     border-radius: 5px;
-    justify-content:center
+    justify-content:center;
 }
 
 #task_graph_image_container {
