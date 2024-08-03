@@ -44,28 +44,31 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">CaptainCook4D: A dataset for understanding errors in procedural activities</h1>
+          <h1 class="title is-1 publication-title">CaptainCook4D: A Dataset for Understanding Errors in Procedural Activities</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/rohithpeddi/">Rohith Peddi</a><sup>1</sup>,
+              <a href="https://rohithpeddi.github.io/">Rohith Peddi</a><sup>1+</sup>,
             </span>
             <span class="author-block">
-              <a href="https://shivvrat.github.io/">Shivvrat Arya</a><sup>1</sup>,
+              <a href="https://shivvrat.github.io/">Shivvrat Arya</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://bharathchalla.github.io/">Bharath Challa</a><sup>1</sup>,
+              <a href="https://bharathchalla.github.io/">Bharath Challa</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/likhithapallapothula/">Likhitha Pallapothula</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/likhithapallapothula/">Likhitha Pallapothula</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/vyas-akshay">Akshay Vyas</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/vyas-akshay">Akshay Vyas</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Jikai Wang</a><sup>1</sup>,
+              <a href="https://rohithpeddi.github.io/">Bhavya Gouripeddi</a><sup>1*</sup>,
             </span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Qifan Zhang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jikai-wang-03243787/">Jikai Wang</a><sup>1</sup>,
             </span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/vasundhara-komaragiri">Vasundhara Komaragiri</a><sup>1</sup>,
@@ -85,10 +88,17 @@
           </div>
 
           <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>+</sup>Project Leader & Corresponding Author</span>
+            <span class="author-block"><sup>*</sup>Denotes equal contribution</span>
             <span class="author-block"><sup>1</sup>The University of Texas at Dallas</span>
             <span class="author-block"><sup>2</sup>The University of Florida</span>
           </div>
 
+          <div class="is-size-5 publication-title">
+            <span class="venue-block">
+              <a href="https://dmlr.ai/">Under Review</a>
+            </span>
+          </div>
           <div class="is-size-5 publication-title">
             <span class="venue-block">
               <a href="https://dmlr.ai/">DMLR Workshop @ICML 2023 (Accepted)</a>
@@ -125,6 +135,26 @@
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>Paper</span>
+                </a>
+              </span>
+              <!-- Approval Link. -->
+              <span class="link-block">
+                <a href="https://utdallas.box.com/s/mplxyvsowyay1lr048bur9habarjgkt9"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-check-square"></i>
+                  </span>
+                  <span>Approval</span>
+                </a>
+              </span>
+              <!-- Consent Link. -->
+              <span class="link-block">
+                <a href="https://utdallas.box.com/s/2qkvsgrn8gfs66o8ha8hnee011t03yl2"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-user-check"></i>
+                  </span>
+                  <span>Consent</span>
                 </a>
               </span>
             </div>
@@ -175,6 +205,15 @@
         </div>
       </div>
 
+      <!-- Overview. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Overview</h2>
+          <img src="./static/images/TitleImage.svg" alt="Overview">
+        </div>
+      </div>
+      <!--/ Overview. -->
+
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -188,8 +227,8 @@
               interpretation of visual information and an ability to reason about the structure of the activity.
               To this end, we collected a new egocentric 4D dataset CaptainCook4D comprising 384 recordings (94.5 hrs) of people performing recipes in real kitchen environments.
               This dataset consists of two distinct activity types: one in which participants adhere to the provided recipe instructions and another where they deviate and induce errors.
-              We provide 5.3K step annotations and 10K fine-grained action annotations and benchmark it on the following tasks:
-              supervised error recognition, multi-step localization and procedure learning.
+              We provide 5.3K step annotations and 10K fine-grained action annotations and benchmark the dataset for the following
+              tasks: error recognition (supervised and zero-shot), multi-step localization and procedure learning.
             </p>
           </div>
         </div>
@@ -341,9 +380,22 @@
 </section>
 
 <section id="data_collection" class="hero is-light is-small is-centered">
+
   <div class="container">
     <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">Data Collection & Annotation</h2>
+      <h2 class="title is-3 has-text-centered">Annotation Overview</h2>
+    </div>
+    <!-- Recipe Timeline. -->
+    <div class="container is-centered is-four-fifths-desktop">
+      <div class="columns is-centered">
+        <div class="column content">
+          <img src="./static/images/RecipeTimeline.svg" alt="RecipeTimeline">
+        </div>
+      </div>
+    </div>
+    <!--/ Recipe Timeline. -->
+    <div class="hero-body">
+      <h2 class="title is-3 has-text-centered">Data Collection & Annotation Illustration</h2>
     </div>
     <div class="columns is-vcentered interpolation-panel is-centered">
       <div class="column interpolation-video-column is-centered">
@@ -354,6 +406,7 @@
     </div>
     <br/>
   </div>
+
 </section>
 
 <section id="data_statistics" class="section">
@@ -389,11 +442,34 @@
     </div>
   </div>
 
+  <div class="hero-body">
+    <div class="container is-centered is-max-desktop">
+      <div class="columns is-centered">
+        <!-- Step Duration Statistics. -->
+        <div class="column is-four-fifths-desktop">
+          <div class="content">
+            <img src="./static/images/StepDurationStatistics.svg" alt="StepDurationStatistics">
+          </div>
+        </div>
+        <!--/ Step Duration Statistics. -->
+        <!-- Video Duration Statistics. -->
+        <div class="column is-four-fifths-desktop">
+          <div class="columns is-centered">
+            <div class="column content">
+              <img src="./static/images/VideoDurationStatistics.svg" alt="VideoDurationStatistics">
+            </div>
+          </div>
+        </div>
+        <!--/ Video Duration Statistics. -->
+      </div>
+    </div>
+  </div>
+
   <div class="container is-centered is-max-desktop">
     <div class="hero-body">
       <!-- Error Synopsis. -->
-      <div class="columns is-centered">
-        <div class="column is-full-width">
+      <div class="columns is-centered is-max-desktop">
+        <div class="column is-full-width is-max-desktop">
           <h3 class="subtitle has-text-centered">
             <span class="recipe_description">
               A structured
@@ -406,7 +482,7 @@
               the annotations.
             </span>
           </h3>
-          <img src="./static/images/ErrorSynopsis.png" alt="ErrorSynopsis">
+          <img src="./static/images/ErrorCategories.svg" alt="ErrorCategories">
         </div>
       </div>
       <!--/ Error Synopsis. -->
@@ -415,21 +491,93 @@
 </section>
 
 
+
+<section id="baselines" class="section">
+  <h2 class="title is-3 has-text-centered">Baselines</h2>
+  <div class="hero-body">
+    <div class="container is-centered is-max-desktop">
+      <h3 class="title is-4 has-text-centered">Error Recognition</h3>
+      <div class="columns is-centered">
+        <!-- Supervised Error Recognition. -->
+        <div class="column is-four-fifths-desktop">
+          <div class="content">
+            <img src="./static/images/ErrorRecognitionBaseline.svg" alt="SupervisedErrorRecognition">
+          </div>
+        </div>
+        <!--/ Supervised Error Recognition. -->
+        <!-- Zero-Shot Error Recognition. -->
+        <div class="column is-four-fifths-desktop">
+          <div class="columns is-centered">
+            <div class="column content">
+              <img src="./static/images/ZeroShotErrorRecognition.svg" alt="ZeroShotErrorRecognition">
+            </div>
+          </div>
+        </div>
+        <!--/ Zero-Shot Error Recognition. -->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="hero-body">
+    <div class="container is-centered is-max-desktop">
+      <!-- Multi-Step Localization. -->
+      <h3 class="title is-4 has-text-centered">Multi-Step Localization.</h3>
+      <div class="columns is-centered">
+        <div class="column">
+          <img src="./static/images/MultiStepLocalizationQualitativeResults.svg" alt="MultiStepLocalization">
+        </div>
+      </div>
+      <!--/ Multi-Step Localization. -->
+    </div>
+  </div>
+</section>
+
+
+
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
+
+          <div class="columns is-centered">
+            <div class="column">
+              <h2 class="title">Data</h2>
+              <p>
+                We provide the data under the license <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+              </p>
+              <p>
+                Our data can be downloaded from the following link: <a href="https://github.com/CaptainCook4D/downloader">Downloader</a>
+              </p>
+              <p>
+                Our annotations can be downloaded from the following link: <a href="https://github.com/CaptainCook4D/annotations">Annotations</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="columns is-centered">
+            <div class="column">
+              <h2 class="title">Acknowledgements</h2>
+              <p>
+                This work was supported by the DARPA Perceptually-Enabled Task Guidance (PTG) Program under contract number HR00112220005.
+                We would also like to extremely thank Sai Krishna, Zhang Yang, Jihan Wang, Enoch Chiu, Pratyush Kaware, Samuel, Jyothise, Shruthi and Manogna for allowing us to collect data in their kitchens.
+              </p>
+            </div>
+          </div>
+
           <div class="citation">
-            <p class="citation-title">Citation:</p>
-            <pre id="citationText" class="citation-text">@misc{peddi2023captaincook4d,
-              title         = {CaptainCook4D: A dataset for understanding errors in procedural activities},
-              author        = {Rohith Peddi and Shivvrat Arya and Bharath Challa and Likhitha Pallapothula and Akshay Vyas and Jikai Wang and Qifan Zhang and Vasundhara Komaragiri and Eric Ragan and Nicholas Ruozzi and Yu Xiang and Vibhav Gogate},
-              year          = {2023},
-              eprint        = {2312.14556},
-              archivePrefix = {arXiv},
-              primaryClass  = {cs.CV}
-            }</pre>
+            <h2 class="title">Citation</h2>
+            <pre id="citationText" class="citation-text">
+              @misc{peddi2023captaincook4d,
+                title         = {CaptainCook4D: A dataset for understanding errors in procedural activities},
+                author        = {Rohith Peddi and Shivvrat Arya and Bharath Challa and Likhitha Pallapothula and Akshay Vyas and Jikai Wang and Qifan Zhang and Vasundhara Komaragiri and Eric Ragan and Nicholas Ruozzi and Yu Xiang and Vibhav Gogate},
+                year          = {2023},
+                eprint        = {2312.14556},
+                archivePrefix = {arXiv},
+                primaryClass  = {cs.CV}
+              }
+            </pre>
             <button onclick="copyCitation()">Copy Citation</button>
           </div>
         </div>
